@@ -1,6 +1,6 @@
 {
   "name": "@npms/queries",
-  "version": "3.0.0",
+  "version": "3.0.1-test1",
   "description": "Module that offers a variety of queries around npms data",
   "main": "index.js",
   "scripts": {
@@ -44,6 +44,14 @@
     "mocha": "^5.2.0",
     "nock": "^10.0.1",
     "standard-version": "^4.2.0"
+  },
+  "overrides": {
+    "joi": {
+      "hoek": "npm:@npm/hoek@5.0.5",
+      "topo@3.0.3": {
+        "hoek": "npm:@npm/hoek@6.1.4"
+      }
+    }
   },
   "husky": {
     "hooks": {
